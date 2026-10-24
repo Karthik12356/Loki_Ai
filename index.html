@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b12">
+  <title>LOKI // OS ULTRA v2</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="brand-mark">L</span><span>LOKI <small>// OS ULTRA V2</small></span></a>
+      <div class="status"><i id="statusDot"></i><span id="statusText">CHECKING SYSTEM</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> NEURAL VOICE INTERFACE <span class="line"></span> BLR // IND</div>
+      <h1>Good to see you,<br><span>DevaYodha.</span></h1>
+      <p class="sub">Your voice. Your intelligence. Your system.</p>
+    </section>
+
+    <section class="core-panel">
+      <div class="core-wrap">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core" id="core"><div class="core-inner"><span> L </span></div></div>
+        <div class="core-caption" id="coreCaption">SYSTEM STANDBY</div>
+      </div>
+      <div class="controls">
+        <button class="engage" id="voiceBtn"><span class="mic-icon">◉</span><span id="voiceBtnText">ENGAGE LOKI</span></button>
+        <p class="hint" id="hint">Tap to speak. Allow microphone access when prompted.</p>
+        <div class="secondary-actions">
+          <button class="ghost" id="keyboardBtn">⌨ TYPE MESSAGE</button>
+          <button class="ghost" id="stopBtn" disabled>■ STOP AUDIO</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="console">
+      <div class="console-head"><span>SESSION CONSOLE</span><span id="clock">--:--:--</span></div>
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="msg system"><span class="msg-tag">LOKI</span><p>LOKI v2 initialized. Ask me something or engage voice mode.</p></div>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input id="messageInput" autocomplete="off" placeholder="Type a command or ask a question…" aria-label="Message">
+        <button type="submit" aria-label="Send message">SEND ↗</button>
+      </form>
+    </section>
+    <footer><span>LOKI // BUILT FOR DEVAYODHA</span><span>API KEY STAYS ON YOUR SERVER</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
